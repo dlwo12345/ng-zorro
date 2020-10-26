@@ -1,27 +1,18 @@
-# NgZorro
+# ng-zorro 프로토타이핑
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+- 실무 적용 전 프로토타이핑을 위한 프로젝트
 
-## Development server
+## 개발언어
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular v10 기반으로 개발되었으며 기본 프로젝트는 angular-cli를 이용.
+- [Angular CLI](https://github.com/angular/angular-cli) version 10
 
-## Code scaffolding
+## 추가 패키지
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ng-zorro
+> ng add ng-zorro-antd<br>
+>> Enable icon dynamic loading > y<br>
+>> Set up custom theme file > y<br>
+>> Choose your locale code > ko_KR<br>
+>> Choose template to create project > sideMenu<br>
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
