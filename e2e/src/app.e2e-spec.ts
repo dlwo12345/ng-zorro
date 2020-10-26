@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to ng-zorro!');
+    expect(page.getTitleText()).toEqual('ng-zorro app is running!');
   });
 
   afterEach(async () => {
