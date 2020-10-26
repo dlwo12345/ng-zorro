@@ -16,3 +16,9 @@
 >> Choose your locale code > ko_KR<br>
 >> Choose template to create project > sideMenu<br>
 
+
+## start
+- npm run start
+
+## build
+- npm run build
