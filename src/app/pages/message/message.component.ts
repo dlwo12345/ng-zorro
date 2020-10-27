@@ -1,10 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({
   selector: 'app-message',
-  templateUrl: './message.component.html',
-  styleUrls: ['./message.component.scss'],
+  template: `
+    <button nz-button [nzType]="'primary'" (click)="showMessage()">
+      메세지 확인
+    </button>
+  `,
 })
 export class MessageComponent {
   constructor(private message: NzMessageService) {}
