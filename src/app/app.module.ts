@@ -13,24 +13,20 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { ko_KR } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import ko from '@angular/common/locales/ko';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(ko);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IconsProviderModule,
-    NzLayoutModule,
-    NzMenuModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: ko_KR }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
