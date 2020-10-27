@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { Routes, RouterModule } from '@angular/router';
-import { MessageComponent } from './message.component';
+import { ModalComponent } from './modal.component';
 
-const routes: Routes = [{ path: '', component: MessageComponent }];
+const routes: Routes = [{ path: '', component: ModalComponent }];
 
 @NgModule({
   imports: [SharedModule, RouterModule.forChild(routes)],
-  declarations: [MessageComponent],
-  exports: [MessageComponent],
+  declarations: [ModalComponent],
+  exports: [ModalComponent],
 })
-export class MessageModule {}
+export class ModalModule {}

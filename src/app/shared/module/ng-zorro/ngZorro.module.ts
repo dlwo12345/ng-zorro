@@ -4,6 +4,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 @NgModule({
   imports: [
@@ -12,8 +13,15 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     NzMenuModule,
     NzMessageModule,
     NzButtonModule,
+    NzModalModule,
   ],
-  exports: [NzLayoutModule, NzMenuModule, NzMessageModule, NzButtonModule],
+  exports: [
+    NzLayoutModule,
+    NzMenuModule,
+    NzMessageModule,
+    NzButtonModule,
+    NzModalModule,
+  ],
   providers: [],
   declarations: [],
 })
