@@ -13,6 +13,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/modal/modal.module').then((m) => m.ModalModule),
   },
+  {
+    path: 'custom-confirm',
+    loadChildren: () =>
+      import('./pages/custom-confirm/custom-confirm.module').then(
+        (m) => m.CustomConfirmModule
+      ),
+  },
 ];
 
 @NgModule({
