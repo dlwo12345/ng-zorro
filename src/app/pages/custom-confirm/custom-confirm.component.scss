@@ -1,0 +1,40 @@
+/* 커스텀 가능 */
+::ng-deep .dialog-footer-wrap {
+  text-align: center;
+  .dialog-btn-blue {
+    color: #33a0ff;
+  }
+  .dialog-btn {
+    flex-grow: 1;
+    padding: 1px 32px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #888;
+    position: relative;
+    letter-spacing: -1px;
+    margin-right: 15px;
+    border: 0;
+    background: white;
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      content: "";
+      width: 1px;
+      height: 16px;
+      background-color: #d8d8d8;
+    }
+
+    &:last-of-type {
+      margin-right: 0px;
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

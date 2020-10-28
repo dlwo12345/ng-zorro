@@ -29,51 +29,7 @@ import { Component } from '@angular/core';
       </ng-template>
     </nz-modal>
   `,
-  styles: [
-    `
-      /* 커스텀 가능 */
-      ::ng-deep .dialog-footer-wrap {
-        text-align: center;
-      }
-      ::ng-deep .dialog-footer-wrap .dialog-btn:after {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        content: '';
-        width: 1px;
-        height: 16px;
-        background-color: #d8d8d8;
-      }
-
-      ::ng-deep .dialog-footer-wrap .dialog-btn {
-        flex-grow: 1;
-        padding: 1px 32px;
-        text-align: center;
-        outline: none;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        font-weight: 500;
-        color: #888;
-        position: relative;
-        letter-spacing: -1px;
-        margin-right: 15px;
-        border: 0;
-        background: white;
-      }
-
-      ::ng-deep .dialog-footer-wrap .dialog-btn:last-of-type {
-        margin-right: 0px;
-      }
-      ::ng-deep .dialog-footer-wrap .dialog-btn:last-of-type:after {
-        content: none;
-      }
-      ::ng-deep .dialog-btn-blue {
-        color: #33a0ff;
-      }
-    `,
-  ],
+  styleUrls: ['./custom-confirm.component.scss'],
 })
 export class CustomConfirmComponent {
   isVisible = false;
