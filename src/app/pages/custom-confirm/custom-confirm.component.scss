@@ -1,9 +1,7 @@
 /* 커스텀 가능 */
 ::ng-deep .dialog-footer-wrap {
   text-align: center;
-  .dialog-btn-blue {
-    color: #33a0ff;
-  }
+ 
   .dialog-btn {
     flex-grow: 1;
     padding: 1px 32px;
@@ -19,6 +17,9 @@
     margin-right: 15px;
     border: 0;
     background: white;
+    &.dialog-btn-blue {
+      color: #33a0ff;
+    }
     &:after {
       position: absolute;
       top: 50%;
