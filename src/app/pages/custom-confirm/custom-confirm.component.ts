@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
       <span>Show Modal</span>
     </button>
     <nz-modal
+      [nzCloseIcon]="null"
       [(nzVisible)]="isVisible"
-      [nzTitle]="modalTitle"
+      nzClosable="false"
+      [nzWidth]="'320px'"
       [nzContent]="modalContent"
       [nzFooter]="modalFooter"
       (nzOnCancel)="handleCancel()"
@@ -23,7 +25,7 @@ import { Component } from '@angular/core';
         <div class="dialog-footer-wrap">
           <button class="dialog-btn" (click)="handleCancel()">닫기</button>
           <button class="dialog-btn dialog-btn-blue" (click)="handleOk()">
-            클릭 3초후에 끄기
+            확인
           </button>
         </div>
       </ng-template>
