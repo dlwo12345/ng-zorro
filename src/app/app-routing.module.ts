@@ -20,6 +20,13 @@ const routes: Routes = [
         (m) => m.CustomConfirmModule
       ),
   },
+  {
+    path: 'datepicker',
+    loadChildren: () =>
+      import('./pages/datepicker/datepicker.module').then(
+        (m) => m.DatepickerModule
+      ),
+  },
 ];
 
 @NgModule({
