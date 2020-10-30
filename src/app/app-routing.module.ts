@@ -34,6 +34,13 @@ const routes: Routes = [
         (m) => m.FormModule
       ),
   },
+  {
+    path: 'skeleton',
+    loadChildren: () =>
+      import('./pages/skeleton/skeleton.module').then(
+        (m) => m.SkeletonModule
+      ),
+  },
 ];
 
 @NgModule({
