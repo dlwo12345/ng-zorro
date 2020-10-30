@@ -27,6 +27,13 @@ const routes: Routes = [
         (m) => m.DatepickerModule
       ),
   },
+  {
+    path: 'form',
+    loadChildren: () =>
+      import('./pages/form/form.module').then(
+        (m) => m.FormModule
+      ),
+  },
 ];
 
 @NgModule({

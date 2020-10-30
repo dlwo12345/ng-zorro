@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <nz-date-picker
       *ngIf="mode === 'date'"
+      nzDropdownClassName="test"
       nzPlaceHolder="일"
       nzFormat="yyyy.MM.dd"
       [(ngModel)]="date"
