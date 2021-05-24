@@ -46,7 +46,7 @@ import { Component } from '@angular/core';
         border: 0;
       }
       ::ng-deep .ant-picker-input > input {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
       }
     `,

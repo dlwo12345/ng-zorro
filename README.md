@@ -10,15 +10,21 @@
 ## 추가 패키지
 
 - ng-zorro
-> ng add ng-zorro-antd<br>
->> Enable icon dynamic loading > y<br>
->> Set up custom theme file > y<br>
->> Choose your locale code > ko_KR<br>
->> Choose template to create project > sideMenu<br>
+  > ng add ng-zorro-antd<br>
+  >
+  > > Enable icon dynamic loading > y<br>
+  > > Set up custom theme file > y<br>
+  > > Choose your locale code > ko_KR<br>
+  > > Choose template to create project > sideMenu<br>
 
+## port
+
+4300(default)
 
 ## start
+
 - npm run start
 
 ## build
+
 - npm run build
